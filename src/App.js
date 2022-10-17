@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./Components/navbar/Navbar";
 import About from "./Pages/About";
 import Accounts from "./Pages/Accounts";
 import Commodities from "./Pages/AllInstruments/Commodities";
@@ -26,6 +27,7 @@ import WebTrade from "./Pages/WebTrade";
 const App = () => {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/accounts" exact element={<Accounts />} />

@@ -1,51 +1,83 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { HashLink as Link } from "react-router-hash-link";
+import logo from "../../images/logo.png";
 import "./style.css";
 const Navbar = () => {
+  const [checked, setChecked] = useState(false);
+
   return (
     <div className="wrapper">
       <nav>
-        <input type="checkbox" id="show-menu" />
+        <input
+          type="checkbox"
+          id="show-menu"
+          checked={checked}
+          onChange={(e) => setChecked(e.target.checked)}
+        />
         <label htmlFor="show-menu" className="menu-icon">
           <i className="fas fa-bars" id="bar"></i>
         </label>
         <div className="logo">
           <Link to="/" id="logo">
-            Logo
+            <img src={logo} alt="logo" />
           </Link>
         </div>
         <div className="content">
           <ul className="links" id="links">
             <li>
-              <Link to="/accounts" className="desktop-link" id="trading">
+              <Link
+                to="/"
+                className="desktop-link"
+                onClick={(event) => event.preventDefault()}
+                id="trading"
+              >
                 Trading
               </Link>
               <input type="checkbox" id="show-trading" />
               <label htmlFor="show-trading">Trading</label>
               <ul>
                 <li>
-                  <Link to="/Forex">CFDs on Forex</Link>
+                  <Link to="/Forex" onClick={() => setChecked(false)}>
+                    CFDs on Forex
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/Metals">CFDs on Metals</Link>
+                  <Link to="/Metals" onClick={() => setChecked(false)}>
+                    CFDs on Metals
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/Indices">CFDs Indices</Link>
+                  <Link to="/Indices" onClick={() => setChecked(false)}>
+                    CFDs on Indices
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/Equities">CFDs on Equities</Link>
+                  <Link to="/Equities" onClick={() => setChecked(false)}>
+                    CFDs on Equities
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/Cryptocurrencies">CFDs Cryptocurrencies</Link>
+                  <Link
+                    to="/Cryptocurrencies"
+                    onClick={() => setChecked(false)}
+                  >
+                    CFDs on Cryptocurrencies
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/Energies">CFDs on Energies</Link>
+                  <Link to="/Energies" onClick={() => setChecked(false)}>
+                    CFDs on Energies
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/Commodities">CFDs on Commodities</Link>
+                  <Link to="/Commodities" onClick={() => setChecked(false)}>
+                    CFDs on Commodities
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/commissions"> Commissions and swaps</Link>
+                  <Link to="/commissions" onClick={() => setChecked(false)}>
+                    Commissions and swaps
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -58,13 +90,27 @@ const Navbar = () => {
               <label htmlFor="show-accounts">Accounts</label>
               <ul>
                 <li>
-                  <Link to="/accounts">Account types</Link>
+                  <Link to="/accounts#types" onClick={() => setChecked(false)}>
+                    Account types
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/comparison">Account Comparison</Link>
+                  <Link
+                    to="/accounts#accFunding"
+                    onClick={() => setChecked(false)}
+                  >
+                    Account Funding
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/kyc">KYC Guide</Link>
+                  <Link to="/comparison" onClick={() => setChecked(false)}>
+                    Account Comparison
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/kyc" onClick={() => setChecked(false)}>
+                    KYC Guide
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -77,31 +123,37 @@ const Navbar = () => {
               <label htmlFor="show-platform">Trading Platforms</label>
               <ul>
                 <li>
-                  <Link to="/webtrade">Web Trader</Link>
+                  <Link to="/webtrade" onClick={() => setChecked(false)}>
+                    Web Trader
+                  </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link to="/about" className="desktop-link" id="about">
+              <Link to="/about#about" className="desktop-link" id="about">
                 About Us
               </Link>
               <input type="checkbox" id="show-about" />
               <label htmlFor="show-about">About Us</label>
               <ul>
                 <li>
-                  <Link to="/about" onClick={() => window.scrollTo(0, 0)}>
+                  <Link to="/about#about" onClick={() => setChecked(false)}>
                     About US
                   </Link>
                 </li>
                 <li>
-                  <Link to="/about" onClick={() => window.scrollTo(0, 1000)}>
+                  <Link to="/about#contact" onClick={() => setChecked(false)}>
                     Contact US
                   </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link to="/tradingglossary" className="desktop-link" id="tools">
+              <Link
+                to="/tools#tradingglossary"
+                className="desktop-link"
+                id="tools"
+              >
                 Tools
               </Link>
               <input type="checkbox" id="show-tools" />
@@ -109,16 +161,16 @@ const Navbar = () => {
               <ul>
                 <li>
                   <Link
-                    to="/tradingglossary"
-                    onClick={() => window.scrollTo(0, 0)}
+                    to="/tools#tradingglossary"
+                    onClick={() => setChecked(false)}
                   >
                     Trading Glossary
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/tradingglossary"
-                    onClick={() => window.scrollTo(0, 1000)}
+                    to="/tools#economical"
+                    onClick={() => setChecked(false)}
                   >
                     Economical Calendar
                   </Link>
@@ -126,12 +178,16 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              <button className="header__lg-btn" id="login">
-                Login
-              </button>
-              <button className="header__oa-btn" id="open">
-                Open Account
-              </button>
+              <a href="https://web-trader.online/">
+                <button className="header__lg-btn" id="login">
+                  Login
+                </button>
+              </a>
+              <a href="https://web-trader.online/">
+                <button className="header__oa-btn" id="open">
+                  Open Account
+                </button>
+              </a>
             </li>
           </ul>
         </div>
