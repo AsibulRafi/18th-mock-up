@@ -1,0 +1,122 @@
+.kyc {
+  width: 100%;
+  height: 100%;
+  background: #201854;
+
+  &__wrapper {
+    padding: 20rem 20rem;
+    @media screen and (max-width: 1700px) {
+      padding: 20rem 5rem;
+    }
+    @include breakpoint-down(tab) {
+      padding: 20rem 4rem;
+    }
+    @include breakpoint-down(mobile) {
+      padding: 15rem 3rem;
+    }
+  }
+  &__heading {
+    text-align: center;
+    margin-bottom: 15rem;
+    @include breakpoint-down(mobile) {
+      margin-bottom: 10rem;
+    }
+    h2 {
+      font-size: 7rem;
+      font-weight: 500;
+      color: #ffffff;
+      @media screen and (max-width: 1400px) {
+        font-size: 5rem;
+      }
+      @include breakpoint-down(tab) {
+        font-size: 4.5rem;
+      }
+      @include breakpoint-down(mobile) {
+        font-size: 4rem;
+      }
+    }
+    p {
+      font-size: 2rem;
+      margin-block: 2rem;
+      line-height: 30px;
+      color: #fff;
+      font-family: "Rubik", sans-serif;
+      @include breakpoint-down(mobile) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    @include breakpoint-down(tab) {
+      flex-direction: column;
+    }
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      color: #c4c4c4;
+      @include breakpoint-down(mobile) {
+        font-size: 2rem;
+      }
+    }
+    h3 {
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-block: 2rem;
+      @include breakpoint-down(mobile) {
+        font-size: 1.6rem;
+      }
+    }
+    h4 {
+      font-weight: 500;
+      font-size: 2rem;
+      margin-block: 1rem;
+      @include breakpoint-down(mobile) {
+        font-size: 1.6rem;
+      }
+    }
+    p {
+      font-size: 1.5rem;
+      line-height: 30px;
+      margin-block: 1rem;
+      @include breakpoint-down(mobile) {
+        font-size: 1.4rem;
+        line-height: 24px;
+      }
+    }
+    ul {
+      margin-left: 5rem;
+      li {
+        font-size: 1.6rem;
+        margin-block: 1rem;
+        font-weight: 500;
+        font-family: "Rubik", sans-serif;
+      }
+      li::marker {
+        color: #c4c4c4;
+        font-size: 2.5rem;
+      }
+    }
+    .kyc__content-single-info {
+      margin-bottom: 5rem;
+    }
+    &-poi {
+      flex-basis: 50%;
+      margin-right: 5rem;
+      @include breakpoint-down(tab) {
+        margin-right: 0rem;
+        margin-bottom: 3rem;
+      }
+      ul {
+        margin-block: 5rem;
+      }
+    }
+    &-por {
+      flex-basis: 50%;
+    }
+  }
+}

@@ -1,0 +1,225 @@
+.account__comparison__heading {
+  background: linear-gradient(270deg, #3411aa 0%, #573abb 100%);
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../images/stars.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+  }
+  &-wrapper {
+    padding: 20rem 20rem 40rem;
+    @media screen and (max-width: 1700px) {
+      padding: 20rem 4rem 40rem;
+    }
+    @include breakpoint-down(laptop) {
+      padding: 20rem 3rem 40rem;
+    }
+    @include breakpoint-down(tab) {
+      padding: 20rem 2rem 30rem;
+    }
+    @include breakpoint-down(mobile) {
+      padding: 15rem 1rem 15rem;
+    }
+    @media screen and (max-width: 400px) {
+      padding: 15rem 1rem 8rem;
+    }
+    position: relative;
+    z-index: 20;
+    h2 {
+      font-size: 5rem;
+      font-weight: 500;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      text-align: center;
+      margin-bottom: 4rem;
+      @include breakpoint-down(tab) {
+        font-size: 4.5rem;
+        width: 100%;
+      }
+      @include breakpoint-down(mobile) {
+        width: 100%;
+        font-size: 4rem;
+        line-height: 50px;
+      }
+    }
+    p {
+      font-size: 16px;
+      color: #fff;
+      text-align: center;
+      line-height: 30px;
+      @include breakpoint-down(laptop) {
+        br {
+          display: none;
+        }
+      }
+      @include breakpoint-down(mobile) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+.account__comparison {
+  background: #1f1f47;
+  color: #fff;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 45rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../images/accountsVector.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // @media screen and (max-width: 1350px) {
+    //   top: 55rem;
+    // }
+    // @include breakpoint-down(tab) {
+    //   top: 45rem;
+    // }
+    // @media screen and (max-width: 700px) {
+    //   top: 48rem;
+    // }
+    // @include breakpoint-down(mobile) {
+    //   top: 15rem;
+    // }
+    // @media screen and (max-width: 450px) {
+    //   top: 30rem;
+    // }
+    // @media screen and (max-width: 400px) {
+    //   display: none;
+    // }
+  }
+  &__wrapper {
+    position: relative;
+    z-index: 20;
+    padding: 10rem 15rem;
+    @media screen and (max-width: 1700px) {
+      padding: 10rem 5rem;
+    }
+    @include breakpoint-down(tab) {
+      padding: 8rem 4rem;
+    }
+    @include breakpoint-down(mobile) {
+      padding: 8rem 2rem 14rem;
+    }
+  }
+
+  &-content {
+    position: relative;
+    top: -10rem;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    @include breakpoint-down(mobile) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &_button {
+      font-family: "Rubik";
+      cursor: pointer;
+      text-transform: uppercase;
+      font-size: 3rem;
+      margin-inline: 2rem;
+      width: 245px;
+      height: 200px;
+      background: rgba(28, 31, 74, 0.8);
+      border: 2px solid #c4c4c4;
+      color: #fff;
+      border-radius: 5px;
+      @include breakpoint-down(mobile) {
+        margin-block: 2rem;
+        font-size: 2rem;
+      }
+    }
+    .fbtn_active {
+      background: linear-gradient(225.55deg, #592a79 0%, #e47c73 98.78%);
+    }
+  }
+}
+.financial {
+  &__heading {
+    h2 {
+      font-size: 3rem;
+      font-weight: 500;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 5rem;
+      @include breakpoint-down(tab) {
+        font-size: 2.6rem;
+      }
+      @include breakpoint-down(mobile) {
+        font-size: 2rem;
+      }
+    }
+  }
+  &-table {
+    margin-top: 3rem;
+    text-align: center;
+    @include breakpoint-down(tab) {
+      overflow-x: auto;
+    }
+    .table-title {
+      margin-top: 6rem;
+      margin-bottom: 2rem;
+      font-size: 3rem;
+      font-weight: 500;
+      color: #fff;
+      text-align: center;
+      @include breakpoint-down(tab) {
+        font-size: 2.6rem;
+      }
+      @include breakpoint-down(mobile) {
+        font-size: 2rem;
+      }
+    }
+    &-content {
+      width: 100%;
+      text-align: center;
+      border-spacing: 0;
+
+      tbody {
+        tr {
+          background: #000;
+          color: #fff;
+          &:nth-child(odd) {
+            background: #f2f2f0;
+            color: #000;
+          }
+        }
+      }
+      thead {
+        background: #613fbf;
+        border: none;
+        border-spacing: 0px;
+        border: 1px solid #613fbf;
+      }
+
+      th {
+        font-size: 1.6rem;
+        font-family: "Rubik", sans-serif;
+        font-weight: 500;
+        padding: 2rem;
+        color: #fff;
+      }
+      td {
+        font-size: 1.4rem;
+        padding: 2rem 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+.experience {
+  padding: 8rem 20rem;
+  background-color: #201854;
+  position: relative;
+  width: 100%;
+}
+.experience::before {
+  content: "";
+  position: absolute;
+  top: -109rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../images/heroVector.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1250px) {
+  .experience::before {
+    top: -150rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .experience::before {
+    top: -243rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .experience::before {
+    top: -230rem;
+  }
+}
+.experience__heading {
+  position: relative;
+  z-index: 10;
+  font-size: 4rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 50px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+.experience__content {
+  position: relative;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 8rem;
+  grid-row-gap: 5rem;
+  grid-column-gap: 3rem;
+}
+.experience__content-item {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  padding: 5rem 0rem 5rem 0rem;
+  color: #fff;
+  background: linear-gradient(
+    213.08deg,
+    #000695 0.65%,
+    #2f2097 41.01%,
+    #71439a 100%
+  );
+  border-radius: 5px;
+}
+.experience__content-item:hover {
+  transition: transform 0.5s ease-out;
+  transform: translateY(-5px);
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.experience__content-item h4 {
+  font-weight: 600;
+  font-size: 3rem;
+  margin-top: 6rem;
+}
+
+@media screen and (max-width: 1250px) {
+  .experience__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .experience__content-item {
+    align-items: center;
+    width: 100%;
+  }
+  .experience__content-item {
+    padding: 5rem 1rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .experience__content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 450px) {
+  .experience__content-item h4 {
+    font-size: 2rem;
+    margin-right: 1.5rem;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .experience {
+    padding: 8rem 5rem;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .experience {
+    padding: 8rem 4rem;
+  }
+  .experience__heading {
+    font-size: 3rem;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 8rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .experience {
+    padding: 5rem 2rem;
+  }
+  .experience__heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+}

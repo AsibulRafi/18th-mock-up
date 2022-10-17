@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&family=Rubik:wght@300;400;500;600;700&display=swap");
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Rubik", "Noto Sans", sans-serif;
+  font-weight: 400;
+  color: #000;
+}
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+br {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+p {
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+}
+// Visibility
+// .hide-for-mobile {
+//   @include breakpoint-down(medium) {
+//     display: none;
+//   }
+// }
+
+// .hide-for-desktop {
+//   @include breakpoint-up(large) {
+//     display: none;
+//   }
+// }

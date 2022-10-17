@@ -1,0 +1,41 @@
+.button-container {
+  display: flex;
+  margin-block: 4rem;
+}
+.button1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-right: 5rem;
+  padding: 1.5rem 3rem;
+  border: 2px solid #a7a7a7;
+  background: #1c1f4a;
+  color: #fff;
+  border-radius: 10px;
+}
+.button1:hover {
+  background: linear-gradient(180deg, #ed589f 0%, #5b3ec1 100%);
+}
+.button2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 1rem 3rem;
+  border: 2px solid #a7a7a7;
+  background: #1c1f4a;
+  color: #fff;
+  border-radius: 10px;
+}
+.button2:hover {
+  background: linear-gradient(180deg, #ed589f 0%, #5b3ec1 100%);
+}
+@media screen and (max-width: 650px) {
+  .button1,
+  .button2 {
+    font-size: 1.5rem;
+    padding: 0.8rem 1.5rem;
+  }
+  .button1 {
+    margin-right: 2rem;
+  }
+}

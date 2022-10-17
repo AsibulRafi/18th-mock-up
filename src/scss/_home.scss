@@ -1,0 +1,270 @@
+.hero {
+  background: linear-gradient(180deg, #00002b 0%, #11064b 33.76%, #200c69 100%);
+  position: relative;
+  height: 120vh;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../images/stars.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+  }
+  &__wrapper {
+    padding: 0rem 4rem;
+    height: 100%;
+    @include breakpoint-down(laptop) {
+      padding: 0rem 3rem;
+    }
+    @include breakpoint-down(tab) {
+      padding: 0rem 2rem;
+    }
+    @include breakpoint-down(mobile) {
+      padding: 0rem 1rem;
+    }
+  }
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    &-text {
+      text-align: center;
+      h2 {
+        font-size: 6.5rem;
+        font-weight: 600;
+        line-height: 90px;
+        width: 67rem;
+        color: #fff;
+        margin-bottom: 5rem;
+        @include breakpoint-down(tab) {
+          font-size: 5rem;
+          width: 100%;
+        }
+        @include breakpoint-down(mobile) {
+          width: 100%;
+          font-size: 3.5rem;
+          line-height: 50px;
+        }
+      }
+      .button-container {
+        justify-content: center;
+      }
+      .button1,
+      .button2 {
+        position: relative;
+        font-family: "Rubik", sans-serif;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 1.6rem 4rem;
+        border: none;
+        background: linear-gradient(180deg, #fefeff 0%, #dae0ff 100%);
+        color: #000000;
+        border-radius: 5px;
+        transition: transform 0.3s ease-in-out;
+        @include breakpoint-down(mobile) {
+          padding: 1.2rem 3rem;
+          font-size: 16px;
+        }
+        @include breakpoint-down(mobile) {
+          padding: 1rem 2rem;
+          font-size: 14px;
+        }
+        &:hover {
+          transform: translateY(-5px);
+        }
+      }
+      .button1 {
+        margin-right: 5rem;
+        @include breakpoint-down(mobile) {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+}
+.home__line {
+  margin: 0rem auto;
+  width: 80%;
+}
+.take__control {
+  background-color: #201854;
+  &-wrapper {
+    padding: 10rem 20rem;
+    @media screen and (max-width: 1700px) {
+      padding: 10rem 4rem;
+    }
+    @include breakpoint-down(laptop) {
+      padding: 10rem 3rem;
+    }
+    @include breakpoint-down(tab) {
+      padding: 8rem 2rem;
+    }
+    @include breakpoint-down(mobile) {
+      padding: 8rem 1rem;
+    }
+  }
+  .button-container {
+    justify-content: center;
+    margin-block: 10rem;
+  }
+  &-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 5rem;
+    @include breakpoint-down(tab) {
+      flex-direction: column;
+    }
+    &__infos {
+      margin-right: 3rem;
+      @include breakpoint-down(tab) {
+        margin-right: 0rem;
+        margin-bottom: 3rem;
+      }
+      h2 {
+        font-size: 4rem;
+        font-weight: 600;
+        color: #fff;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 4rem;
+        @include breakpoint-down(tab) {
+          text-align: center;
+          font-size: 3.2rem;
+        }
+        @include breakpoint-down(mobile) {
+          font-size: 2.6rem;
+        }
+      }
+    }
+    &__image {
+      img {
+        width: 100%;
+      }
+    }
+    &__info {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-block: 2rem;
+      h4 {
+        font-size: 2.2rem;
+        margin-right: 1rem;
+        color: #a7a7a7;
+        @include breakpoint-down(mobile) {
+          font-size: 1.8rem;
+        }
+      }
+      p {
+        color: #fff;
+        font-size: 1.8rem;
+        font-family: "Noto Sans";
+        font-weight: 400;
+
+        @include breakpoint-down(mobile) {
+          font-size: 1.5rem;
+        }
+        br {
+          @include breakpoint-down(tab) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+.getMore {
+  background-color: #201854;
+  &-wrapper {
+    padding: 0rem 20rem 10rem;
+    @media screen and (max-width: 1700px) {
+      padding: 0rem 4rem 10rem;
+    }
+    @include breakpoint-down(laptop) {
+      padding: 0rem 3rem 10rem;
+    }
+    @include breakpoint-down(tab) {
+      padding: 0rem 2rem 8rem;
+    }
+    @include breakpoint-down(mobile) {
+      padding: 0rem 1rem 5rem;
+    }
+  }
+  .button-container {
+    justify-content: center;
+  }
+  &-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint-down(tab) {
+      flex-direction: column-reverse;
+    }
+
+    &__infos {
+      margin-left: 10rem;
+      @include breakpoint-down(tab) {
+        margin-left: 0rem;
+        margin-bottom: 3rem;
+      }
+      h2 {
+        font-size: 4rem;
+        font-weight: 600;
+        color: #fff;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 4rem;
+        @include breakpoint-down(tab) {
+          text-align: center;
+          font-size: 3.2rem;
+        }
+        @include breakpoint-down(mobile) {
+          font-size: 2.6rem;
+        }
+      }
+    }
+    &__image {
+      img {
+        width: 100%;
+      }
+    }
+    &__info {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-block: 2rem;
+      h4 {
+        font-size: 2.2rem;
+        margin-right: 1rem;
+        color: #a7a7a7;
+        @include breakpoint-down(mobile) {
+          font-size: 1.8rem;
+        }
+      }
+      p {
+        color: #fff;
+        font-size: 1.8rem;
+        font-family: "Noto Sans";
+        font-weight: 400;
+
+        @include breakpoint-down(mobile) {
+          font-size: 1.5rem;
+        }
+        br {
+          @include breakpoint-down(tab) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
