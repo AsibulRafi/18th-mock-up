@@ -15,8 +15,8 @@ const CFDForex = () => {
           <h2>Trade CFD’s on Forex</h2>
         </div>
       </section>
-      <section className="cfd">
-        <div className="cfd__wrapper">
+      <section className="cfdBg">
+        <div className="cfdBg__wrapper">
           {/* Details */}
           <CFDDetails
             heading="Trade Forex CFDs + pairs with Leverage"
@@ -24,6 +24,10 @@ const CFDForex = () => {
             button="CURRENCY LIST"
             to="/allinstrumentsforex"
           />
+        </div>
+      </section>
+      <section className="cfd">
+        <div className="cfd__wrapper">
           <div className="cfd__content ">
             <div className="cfd__content-text">
               <p>

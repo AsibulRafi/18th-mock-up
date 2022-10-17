@@ -15,8 +15,8 @@ const CFDCommodities = () => {
           <h2>Trade CFD’s on Commodities</h2>
         </div>
       </section>
-      <section className="cfd">
-        <div className="cfd__wrapper">
+      <section className="cfdBg">
+        <div className="cfdBg__wrapper">
           {/* Details */}
           <CFDDetails
             heading="Trade Different Commodities with No name 1"
@@ -24,19 +24,21 @@ const CFDCommodities = () => {
             button="PRODUCT LIST"
             to="/allinstrumentscommodities"
           />
-          <div className="cfd__content ">
-            <div className="cfd__content-text">
-              <p>
-                Commodity markets have had a major impact on nations and people
-                throughout history. Currently there are about 50 major commodity
-                markets worldwide that facilitate trading of approximately 100
-                raw or primary products. There are different categories of
-                commodities, all supported by the same basic economic
-                principles: lower supply equals higher prices and vice versa. At
-                No name 1 you can trade up to 3 CFDs on Commodities such as
-                COCOA, COFFEE and SOYBEAN with very favour able terms.
-              </p>
-            </div>
+        </div>
+      </section>
+      <section className="cfd">
+        <div className="cfd__wrapper">
+          <div className="cfd__content">
+            <p className="cfd__content-p">
+              Commodity markets have had a major impact on nations and people
+              throughout history. Currently there are about 50 major commodity
+              markets worldwide that facilitate trading of approximately 100 raw
+              or primary products. There are different categories of
+              commodities, all supported by the same basic economic principles:
+              lower supply equals higher prices and vice versa. At No name 1 you
+              can trade up to 3 CFDs on Commodities such as COCOA, COFFEE and
+              SOYBEAN with very favour able terms.
+            </p>
           </div>
           <div className="button-container">
             <Link to="/allinstrumentscommodities">

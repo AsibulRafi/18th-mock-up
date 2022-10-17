@@ -149,41 +149,31 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              <Link
-                to="/tools#tradingglossary"
-                className="desktop-link"
-                id="tools"
-              >
+              <Link to="/tradingglossary" className="desktop-link" id="tools">
                 Tools
               </Link>
               <input type="checkbox" id="show-tools" />
               <label htmlFor="show-tools">Tools</label>
               <ul>
                 <li>
-                  <Link
-                    to="/tools#tradingglossary"
-                    onClick={() => setChecked(false)}
-                  >
+                  <Link to="/tradingglossary" onClick={() => setChecked(false)}>
                     Trading Glossary
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to="/tools#economical"
-                    onClick={() => setChecked(false)}
-                  >
+                  <Link to="/tradingglossary" onClick={() => setChecked(false)}>
                     Economical Calendar
                   </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="https://web-trader.online/">
+              <a href="/">
                 <button className="header__lg-btn" id="login">
                   Login
                 </button>
               </a>
-              <a href="https://web-trader.online/">
+              <a href="/">
                 <button className="header__oa-btn" id="open">
                   Open Account
                 </button>

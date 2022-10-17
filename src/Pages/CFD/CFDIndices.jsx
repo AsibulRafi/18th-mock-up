@@ -15,9 +15,8 @@ const CFDIndices = () => {
           <h2>Trade CFD’s on Forex</h2>
         </div>
       </section>
-      <section className="cfd">
-        <div className="cfd__wrapper">
-          {/* Details */}
+      <section className="cfdBg">
+        <div className="cfdBg__wrapper">
           <CFDDetails
             heading="Trade Different Indices with
 No name 1"
@@ -25,6 +24,12 @@ No name 1"
             button="PRODUCT LIST"
             to="/allinstrumentsindices"
           />
+        </div>
+      </section>
+      <section className="cfd">
+        <div className="cfd__wrapper">
+          {/* Details */}
+
           <div className="cfd__content ">
             <div className="cfd__content-text">
               <p>

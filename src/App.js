@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Footer from "./Components/Footer";
 import Navbar from "./Components/navbar/Navbar";
 import About from "./Pages/About";
 import Accounts from "./Pages/Accounts";
@@ -57,6 +58,7 @@ const App = () => {
         <Route path="/allinstrumentsenergies" element={<Energies />} />
         <Route path="/allinstrumentscommodities" element={<Commodities />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };

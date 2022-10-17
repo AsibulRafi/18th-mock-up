@@ -15,8 +15,8 @@ const CFDEquities = () => {
           <h2>Trade CFD’s on Equities</h2>
         </div>
       </section>
-      <section className="cfd">
-        <div className="cfd__wrapper">
+      <section className="cfdBg">
+        <div className="cfdBg__wrapper">
           {/* Details */}
           <CFDDetails
             heading="Trade Different  Equities with No name 1s"
@@ -24,6 +24,10 @@ const CFDEquities = () => {
             button="PRODUCT LIST"
             to="/allinstrumentsequities"
           />
+        </div>
+      </section>
+      <section className="cfd">
+        <div className="cfd__wrapper">
           <div className="cfd__content ">
             <div className="cfdHeading__content-text">
               <p>

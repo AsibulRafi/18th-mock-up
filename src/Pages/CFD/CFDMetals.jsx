@@ -15,8 +15,8 @@ const CFDMetals = () => {
           <h2>Trade CFD’s on Metals</h2>
         </div>
       </section>
-      <section className="cfd">
-        <div className="cfd__wrapper">
+      <section className="cfdBg">
+        <div className="cfdBg__wrapper">
           {/* Details */}
           <CFDDetails
             heading="Trade Different Metals with No name 1"
@@ -24,20 +24,22 @@ const CFDMetals = () => {
             button="PRODUCT LIST"
             to="/allinstrumentsmetals"
           />
-          <div className="cfd__content ">
-            <div className="cfd__content-text">
-              <p>
-                Metals are physical commodities and they have always played an
-                important role in history and will continue to be valued. Metals
-                such as Gold and Silver have been recognized as valuable assets
-                and have always been a very popular choice of investing.
-                Precious metals, especially Gold has always been referred to as
-                ‘Safe Heaven' in times of economic uncertainty. No name 1 offers
-                investors, who do not want to face economic turbulence, access
-                to three fives of metals: Gold, Silver, Palladium, Platinum and
-                Copper.
-              </p>
-            </div>
+        </div>
+      </section>
+      <section className="cfd">
+        <div className="cfd__wrapper">
+          <div className="cfd__content">
+            <p className="cfd__content-p">
+              Metals are physical commodities and they have always played an
+              important role in history and will continue to be valued. Metals
+              such as Gold and Silver have been recognized as valuable assets
+              and have always been a very popular choice of investing. Precious
+              metals, especially Gold has always been referred to as ‘Safe
+              Heaven' in times of economic uncertainty. No name 1 offers
+              investors, who do not want to face economic turbulence, access to
+              three fives of metals: Gold, Silver, Palladium, Platinum and
+              Copper.
+            </p>
           </div>
           <div className="button-container">
             <Link to="/allinstrumentsmetals">

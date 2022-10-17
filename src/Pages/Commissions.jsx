@@ -8,19 +8,28 @@ const Commissions = () => {
     <>
       <section className="commissions__heading">
         <div className="commissions__heading-wrapper">
-          <h2 className="commissions__heading-main">Commmissions and Swaps</h2>
           <div className="commissions__heading-content">
+            <h2>Commissions and Swaps</h2>
+          </div>
+        </div>
+      </section>
+      <section className="swaps">
+        <div className="swaps__wrapper">
+          <div className="swaps-content">
             <h2>Swap Rates</h2>
-            <div className="commissions__heading-content-info">
-              <div className="commissions__heading-content-info-single">
+            <div className="swaps-content-info">
+              <div className="swaps-content-info-single">
                 <h1>1</h1>
                 <h4>Market Watch</h4>
               </div>
-              <div className="commissions__heading-content-info-single">
+              <div className="swaps-content-info-single">
                 <h1>2</h1>
-                <h4>Select the Instrument you wish to check Watch</h4>
+                <h4>
+                  Select the Instrument
+                  <br /> you wish to check Watch
+                </h4>
               </div>
-              <div className="commissions__heading-content-info-single">
+              <div className="swaps-content-info-single">
                 <h1>3</h1>
                 <h4>
                   Right Click and select specifications’. A new window will open
@@ -41,7 +50,7 @@ const Commissions = () => {
           <div className="commissions__content">
             <div className="commissions__content-info">
               <div className="commissions__content-info-1">
-                <h2>What is Swap</h2>
+                <h2>What is Swap?</h2>
                 <p>
                   A forex swap rate is defined as an overnight or rollover
                   interest rate (positive or negative) for holding positions

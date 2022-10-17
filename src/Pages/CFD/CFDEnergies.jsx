@@ -15,8 +15,8 @@ const CFDEnergies = () => {
           <h2>Trade CFD’s on Energies</h2>
         </div>
       </section>
-      <section className="cfd">
-        <div className="cfd__wrapper">
+      <section className="cfdBg">
+        <div className="cfdBg__wrapper">
           {/* Details */}
           <CFDDetails
             heading="Trade Different Energies with
@@ -25,18 +25,19 @@ No name 1"
             button="PRODUCT LIST"
             to="/allinstrumentsenergies"
           />
+        </div>
+      </section>
+      <section className="cfd">
+        <div className="cfd__wrapper">
           <div className="cfd__content ">
-            <div className="cfd__content-text">
-              <p>
-                Oil and gas are the two most popular commodities. They are
-                traded in heavy volumes around the clock offering multiple
-                opportunities to online traders. Whether it is US Crude Oil
-                (WTI), Brent Oil (Brent) or Natural Gas (NATGAS.f), energy
-                commodities are quoted in USD. At No name 1 you can trade 3 CFDs
-                on energies such as Crude Oil, Brent Oil and Natural Gas, with
-                very favour able terms.
-              </p>
-            </div>
+            <p className="cfd__content-p">
+              Oil and gas are the two most popular commodities. They are traded
+              in heavy volumes around the clock offering multiple opportunities
+              to online traders. Whether it is US Crude Oil (WTI), Brent Oil
+              (Brent) or Natural Gas (NATGAS.f), energy commodities are quoted
+              in USD. At No name 1 you can trade 3 CFDs on energies such as
+              Crude Oil, Brent Oil and Natural Gas, with very favour able terms.
+            </p>
           </div>
           <div className="button-container">
             <Link to="/allinstrumentsenergies">

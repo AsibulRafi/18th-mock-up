@@ -8,11 +8,6 @@
     padding: 10rem 4rem;
   }
 }
-@media screen and (max-width: 1700px) {
-  .buySell {
-    padding: 10rem 4rem;
-  }
-}
 @media screen and (max-width: 960px) {
   .buySell {
     padding: 8rem 2rem;
@@ -40,6 +35,11 @@
   color: #fff;
   padding: 0rem 2rem;
 }
+@media screen and (max-width: 1180px) {
+  .buySell__item {
+    justify-content: flex-start;
+  }
+}
 .buySell__item p {
   font-size: 2rem;
   margin-inline: 3rem;
@@ -48,10 +48,7 @@
   color: #fff;
   border-bottom: 2px solid #fff;
 }
-.buySell__item p:hover {
-  /* color: #000;
-  border-bottom: 2px solid #000; */
-}
+
 .buySell__icon {
   display: flex;
   flex-direction: row;
